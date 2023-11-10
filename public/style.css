@@ -1,0 +1,131 @@
+body {
+    background-color: #f4f4f4;
+    padding: 2em;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    font-weight: 600;
+    color: #555;
+}
+
+.flashcards-generation {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+
+
+.input-fields {
+    width: 298px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pages-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.start-div,
+.end-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 48%; 
+}
+
+#start-page, #end-page { margin-bottom: 0.5em; }
+#end-page {
+    align-self: center;
+}
+
+.end-div {
+    align-items: flex-end; 
+}
+
+#start-page-input,
+#end-page-input {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 6px;
+    width: calc(80% - 0.5em);
+    border: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+#api-key {
+    width: calc(100% - 1em);
+}
+
+#api-key-input {
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+#pdf-input {
+    padding: 0.5em;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#upload-btn {
+    padding: 0.75em 1.5em;
+    border-radius: 6px;
+    background-color: #4CAF50; /* A pleasant green */
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+#upload-btn:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+#upload-btn:active {
+    transform: scale(0.98);
+}
+
+@media only screen and (max-width: 640px) {
+    .flashcards-generation {
+        padding: 1.5em;
+    }
+}

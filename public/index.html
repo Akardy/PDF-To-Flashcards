@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Flashcards</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>PDF to Flashcards</h1>
+    <form class="flashcards-generation">
+        <h2>Generate Flashcards in seconds with AI!</h2>
+        <div class="input-fields">
+     <div class="pages-input">
+        <div class="start-div">
+            <label htmlFor="start-page-input" id="start-page"> Starting page </label>
+            <input type="text" id="start-page-input" />
+        </div>
+        <div class="end-div">
+            <label htmlFor="end-page-input" id="end-page"> Ending page </label>
+            <input type="text" id="end-page-input"/>    
+        </div>        
+    </div>
+        <label id="api-key">
+            API Key
+            <input type="text" id="api-key-input"/>               
+        </label>
+        <input type="file" id="pdf-input">
+        </div>
+        
+        <button type="button" id="upload-btn">Generate Flashcards</button>
+        </form>
+        <a id="downloadLink" href="#" style="display: none;">Download Flashcards</a>
+    <script src="script.js"></script>
+</body>
+</html>
